@@ -3,11 +3,11 @@ package eu.davidea.samples.flexibleadapter;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.StaggeredGridLayoutManager;
 
 import java.util.List;
 
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 import eu.davidea.flexibleadapter.FlexibleAdapter;
 import eu.davidea.flexibleadapter.items.AbstractFlexibleItem;
 import eu.davidea.samples.flexibleadapter.items.ScrollableExpandableItem;

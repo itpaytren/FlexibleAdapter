@@ -17,18 +17,20 @@ package eu.davidea.flexibleadapter.helpers;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.support.annotation.ColorInt;
-import android.support.annotation.IntDef;
-import android.support.annotation.IntRange;
-import android.support.annotation.NonNull;
-import android.support.annotation.StringRes;
-import android.support.design.widget.Snackbar;
 import android.view.View;
+
+import com.google.android.material.snackbar.BaseTransientBottomBar.BaseCallback;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.List;
 
+import androidx.annotation.ColorInt;
+import androidx.annotation.IntDef;
+import androidx.annotation.IntRange;
+import androidx.annotation.NonNull;
+import androidx.annotation.StringRes;
 import eu.davidea.flexibleadapter.FlexibleAdapter;
 import eu.davidea.flexibleadapter.utils.Log;
 
@@ -146,8 +148,8 @@ public class UndoHelper extends Snackbar.Callback implements FlexibleAdapter.OnD
      * resources instead of CharSequence.
      */
     public Snackbar start(List<Integer> positions, @NonNull View mainView,
-                           @StringRes int messageStringResId, @StringRes int actionStringResId,
-                           @IntRange(from = -1) int duration) {
+                          @StringRes int messageStringResId, @StringRes int actionStringResId,
+                          @IntRange(from = -1) int duration) {
         Context context = mainView.getContext();
         return start(positions, mainView, context.getString(messageStringResId),
                 context.getString(actionStringResId), duration);
@@ -249,13 +251,13 @@ public class UndoHelper extends Snackbar.Callback implements FlexibleAdapter.OnD
             return;
         }
         switch (event) {
-            case DISMISS_EVENT_SWIPE:
-            case DISMISS_EVENT_MANUAL:
-            case DISMISS_EVENT_TIMEOUT:
+            case BaseCallback.DISMISS_EVENT_SWIPE:
+            case BaseCallback.DISMISS_EVENT_MANUAL:
+            case BaseCallback.DISMISS_EVENT_TIMEOUT:
                 onDeleteConfirmed(event);
                 break;
-            case DISMISS_EVENT_CONSECUTIVE:
-            case DISMISS_EVENT_ACTION:
+            case BaseCallback.DISMISS_EVENT_CONSECUTIVE:
+            case BaseCallback.DISMISS_EVENT_ACTION:
             default:
                 break;
         }

@@ -15,11 +15,11 @@
  */
 package eu.davidea.viewholders;
 
-import android.support.annotation.CallSuper;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
 
+import androidx.annotation.CallSuper;
 import eu.davidea.flexibleadapter.FlexibleAdapter;
 import eu.davidea.flexibleadapter.Payload;
 

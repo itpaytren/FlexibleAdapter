@@ -15,10 +15,10 @@
  */
 package eu.davidea.samples.flexibleadapter.animators;
 
-import android.support.v4.view.ViewCompat;
-import android.support.v7.widget.RecyclerView;
 import android.view.animation.Interpolator;
 
+import androidx.core.view.ViewCompat;
+import androidx.recyclerview.widget.RecyclerView;
 import eu.davidea.flexibleadapter.common.FlexibleItemAnimator;
 
 public class FadeInLeftItemAnimator extends FlexibleItemAnimator {

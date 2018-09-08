@@ -15,10 +15,10 @@
  */
 package eu.davidea.flexibleadapter.helpers;
 
-import android.support.annotation.Nullable;
 import android.view.View;
 import android.view.ViewPropertyAnimator;
 
+import androidx.annotation.Nullable;
 import eu.davidea.fastscroller.FastScroller;
 import eu.davidea.flexibleadapter.FlexibleAdapter;
 

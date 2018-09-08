@@ -2,14 +2,14 @@ package eu.davidea.samples.flexibleadapter.items;
 
 import android.animation.Animator;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.GridLayoutManager;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.GridLayoutManager;
 import eu.davidea.flexibleadapter.FlexibleAdapter;
 import eu.davidea.flexibleadapter.helpers.AnimatorHelper;
 import eu.davidea.flexibleadapter.items.AbstractFlexibleItem;

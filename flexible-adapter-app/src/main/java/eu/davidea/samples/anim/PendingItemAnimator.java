@@ -4,14 +4,15 @@ package eu.davidea.samples.anim;
  * This class handles the pending que for you.
  */
 
-import android.support.v4.view.ViewCompat;
-import android.support.v4.view.ViewPropertyAnimatorCompat;
-import android.support.v4.view.ViewPropertyAnimatorListener;
-import android.support.v7.widget.RecyclerView.ViewHolder;
-import android.support.v7.widget.SimpleItemAnimator;
 import android.view.View;
 
 import java.util.ArrayList;
+
+import androidx.core.view.ViewCompat;
+import androidx.core.view.ViewPropertyAnimatorCompat;
+import androidx.core.view.ViewPropertyAnimatorListener;
+import androidx.recyclerview.widget.RecyclerView.ViewHolder;
+import androidx.recyclerview.widget.SimpleItemAnimator;
 
 /**
  * This was pulled from support 21 rc1. This makes sure your options always happen in a certain order
@@ -470,6 +471,4 @@ public abstract class PendingItemAnimator<H extends ViewHolder> extends SimpleIt
         public void onAnimationCancel(View view) {
         }
     }
-
-    ;
 }

@@ -1,9 +1,9 @@
 package eu.davidea.samples.flexibleadapter.fragments;
 
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import eu.davidea.flexibleadapter.SelectableAdapter;
 
 /**

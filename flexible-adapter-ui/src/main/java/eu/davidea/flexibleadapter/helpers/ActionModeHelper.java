@@ -15,18 +15,18 @@
  */
 package eu.davidea.flexibleadapter.helpers;
 
-import android.support.annotation.CallSuper;
-import android.support.annotation.MenuRes;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.view.ActionMode;
-import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import java.util.List;
 
+import androidx.annotation.CallSuper;
+import androidx.annotation.MenuRes;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.view.ActionMode;
+import androidx.recyclerview.widget.RecyclerView;
 import eu.davidea.flexibleadapter.FlexibleAdapter;
 import eu.davidea.flexibleadapter.SelectableAdapter.Mode;
 import eu.davidea.flexibleadapter.utils.Log;
@@ -69,7 +69,7 @@ public class ActionModeHelper implements ActionMode.Callback {
      *
      * @param adapter  the FlexibleAdapter instance
      * @param cabMenu  the Contextual Action Bar menu resourceId
-     * @param callback the custom {@link android.support.v7.view.ActionMode.Callback}
+     * @param callback the custom {@link ActionMode.Callback}
      * @see #ActionModeHelper(FlexibleAdapter, int)
      * @since 1.0.0-b1
      */
